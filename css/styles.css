@@ -1,24 +1,48 @@
+:root{
+  --cor001: #38bc94;
+  --cor001: #3fb494; 
+  --cor003: #e5eae0;
+  --cor004: #f49a44;
+  --cor005: #ec9748;
+  --cor006: #f7ad7b;
+  --cor007: #fac190;
+  --cor008: #e54184;
+  --cor009: #e9a9bc;
+  --cor010: #e9a9be;
+  --cor011: #ee9db8;
+  
+}
+
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #e9a9be;
+  background-color: var(--cor011);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 body {
-  background-color: #e5eae0;
+  background-color: var(--cor003);
+}
+
+nav{
+  display: flex;
+
 }
 
 #logo-mobile {
-  display: none;
-  width: 0px;
+  display: flex;
+  padding: 15px;
 } 
 
 .menu-icon {
-    cursor: pointer;
     display: none;
-    float: right;
+    cursor: pointer;
+
   }
   
 
@@ -62,7 +86,7 @@ ul li img {
 }
 
 .menu-links li a:hover {
-  background-color: #ee9db8;
+  background-color:var(--cor010);
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -110,7 +134,7 @@ section p {
   gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   header{
     display: flex;
     justify-content: space-between;
@@ -131,7 +155,6 @@ section p {
     display: flex;
     margin: 20px 20px;
     color: aquamarine; 
-    float: right;
   }
 
   .menu-links {
