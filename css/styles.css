@@ -141,34 +141,53 @@ section p {
 .text_home {
   display: flex;
   width: 40%;
-  margin: 0px 0px 0px 280px;
+  flex-direction: column;
 }
 
-.text_home {
-  margin: 0px;
+
+.consulta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+
+  
 }
+
+.consulta a {
+  background-color: white;
+  text-decoration: none;
+  color: #9f6b55;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 44px;
+  box-shadow: 4px 4px 8px 0px #9f7856;  
+}
+
+.consulta {
+  display: flex;
+  justify-content: center;
+}
+
 
 .img_home img {
   display: flex;
   width: 300px;
   border-radius: 5px;
-  box-shadow: 2px 2px 10px 0px #9f7856
+  box-shadow: 2px 2px 10px 0px #9f7856;
 }
-
-
-
 
 /* Config da section contact*/
 .contact_father {
   display: flex;
-  flex-direction: column;
-  width: 500px;
   justify-content: center;
   align-items: center;
-
+  gap: 50px;
 }
 
 .contact_son {
+  display: flex;
   margin-top: 15px;
   align-items: center;
 }
@@ -177,19 +196,38 @@ section p {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 0px;
+  align-items: center;
+  background-color: white;
+  border-radius: 44px;
+  padding: 12px 12px 12px 12px;
   margin-top: 30px;
+  align-items: center;
+  width: 250px;
+  height: 65px;
+  gap: 20px;
+  box-shadow: 4px 4px 8px 0px #9f7856;
+}
+
+.contact_son li{
+  margin-right: 15px;
 }
 
 .contact_son i {
+  list-style: none;
   color: #9f6b55;
-  font-size: 30px;
+  font-size: 60px;
+
 }
 
-.contact_son h4>a {
+.contact_son a {
   text-decoration: none;
-  color: #9f6b55
+  color: #9f6b55;
+  font-size: 15px;
+}
+
+h4.endereco a {
+  text-decoration: none;
+  color: #9f6b55;
 }
 
 .maps_son {
@@ -199,6 +237,7 @@ section p {
 }
 
 .maps_son>iframe {
+  margin-bottom: -10%;
   margin-top: 15px;
   width: 100%;
   height: 100%;
@@ -206,7 +245,7 @@ section p {
 
 /* Config do responsivo*/
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -227,14 +266,6 @@ section p {
 
   }
 
-    /* config responsivo home */
-    .home_father {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-  
-  /* config responsivo contact > maps */
   .menu-icon {
     display: flex;
     margin: 20px 20px;
@@ -249,8 +280,25 @@ section p {
     display: flex;
   }
 
+  /* config responsivo home */
+  .home_father {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  /* config responsivo contact */
+
   .contact_father {
     width: 300px;
+    flex-direction: column;
+    gap: 0px;
+
+  }
+  .contact_son {
+    padding: 0px;
+    margin-top: 0px;
+
   }
 
   .maps {
@@ -258,27 +306,29 @@ section p {
     width: 100%;
     height: 100%;
   }
-
-
+  
+  #contact_top{
+    margin-bottom: 50px;
+  } 
 
 }
 
-/*config do Rodapé
+
+/*config do Rodapé*/
 
 footer {
   background-color: #eb9f7e;
   height: 100%;
   width: 100%;
   text-align: center;
-  
+
 }
 
 footer p {
   margin: 0px;
 }
 
-footer a{
+footer a {
   color: black;
   text-decoration: none;
 }
-*/
