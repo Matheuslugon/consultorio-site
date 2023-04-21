@@ -133,6 +133,7 @@ section p {
   display: flex;
   flex-direction: row-reverse;
   gap: 35px;
+  margin-left: 20px;
   margin-top: 25px;
   align-items: center;
   justify-content: inherit;
@@ -196,17 +197,17 @@ section p {
 
 .intro_son ul{
   padding: 0px;
+  width: 100%;  
 }
 .intro_son ul a {
   list-style: none;
   text-decoration: none;
   display: flex;
+  color: black;
   background-color: white;
   border-radius: 5px;
-  padding: 12px 12px 12px 12px;
+  padding: 20px 20px 20px 20px;
   margin-top: 30px;
-  width: 100%;
-  height: 100%;
   gap: 10px;
   box-shadow: 4px 4px 8px 0px #9f7856;
   align-items: center;
@@ -217,16 +218,25 @@ section p {
   width: 150px;
 }
 /* Config da section contact*/
+#contact_top{
+  margin-bottom: 80px;
+}
+
 .contact_father {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  font-size: 10px;
   gap: 50px;
+  padding-bottom: 15px;
 }
 
 .contact_son {
   display: flex;
   margin-top: 15px;
+  margin-bottom: 15px;
   align-items: center;
 }
 
@@ -236,18 +246,13 @@ section p {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 44px;
+  border-radius: 10px;
   padding: 12px 12px 12px 12px;
   margin-top: 30px;
   width: 250px;
   height: 65px;
   gap: 20px;
   box-shadow: 4px 4px 8px 0px #9f7856;
-}
-
-.contact_son{
-  font-size: 10px;
-
 }
 
 .contact_son i {
@@ -270,15 +275,15 @@ h4.endereco a {
 
 .maps_son {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
 
 .maps_son>iframe {
-  margin-bottom: -10%;
   margin-top: 15px;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 200px;
 }
 
 /* Config do responsivo*/
@@ -323,6 +328,9 @@ h4.endereco a {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+
   }
 
   .text_home{
@@ -341,7 +349,6 @@ h4.endereco a {
   /* config responsivo contact */
 
   .contact_father {
-    width: 300px;
     flex-direction: column;
     gap: 0px;
 
@@ -359,10 +366,8 @@ h4.endereco a {
   }
   .maps_son>iframe {
     margin-bottom: 0%;
-
- 
-
-}
+    width: 100%;
+  }
 
 }
 
