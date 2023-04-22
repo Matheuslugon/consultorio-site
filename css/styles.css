@@ -273,6 +273,9 @@ h4.endereco a {
   color: #9f6b55;
 }
 
+h4.endereco span{
+  margin-left: 5px;
+}
 .maps_son {
   display: flex;
   justify-content: center;
