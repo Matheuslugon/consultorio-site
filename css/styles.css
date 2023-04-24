@@ -181,6 +181,12 @@ section p {
 
 /* Config da section team*/ 
 
+
+
+
+
+
+
 .text_team h1 {
   text-align: center;
 }
@@ -199,6 +205,7 @@ section p {
   padding: 0px;
   width: 100%;  
 }
+
 .intro_son ul a {
   list-style: none;
   text-decoration: none;
@@ -217,6 +224,71 @@ section p {
 .intro_son img{
   width: 150px;
 }
+
+/*Config modal*/
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all 0.1s;
+}
+ 
+.modal:target {
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_content_father{
+  background-color: #e9a9bc;
+  display: flex;
+  flex-direction: row;
+}
+
+.content_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.name_dra{
+  display: flex;
+}
+
+.list_dra{
+  display: flex;
+}
+
+.list_dra li{
+  margin-bottom: 10px;
+}
+
+.content_img img{
+  width: 100%;
+}
+
+.modal_close {
+  display: flex;
+  flex-direction: row-reverse;
+  /*background-color: #e9a9bc;*/
+}
+
+
+
+
+
+
+
 /* Config da section contact*/
 #contact_top{
   margin-bottom: 80px;
@@ -289,6 +361,45 @@ h4.endereco span{
   height: 200px;
 }
 
+/*config do Rodapé*/
+
+footer {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer_father{
+  color: #9f6b55;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_text{
+  display: flex;
+}
+
+.footer_icon{
+  display: flex;
+  gap: 10px;
+}
+
+.footer_icon i{
+  color: #9f6b55;
+}
+
 /* Config do responsivo*/
 
 @media (max-width: 950px) {
@@ -347,7 +458,20 @@ h4.endereco span{
     flex-direction: column;
     gap: 0px;
   }
+ 
+  /* Config responsivo modal */
+  .modal_content_father{
+    flex-direction: column;
+  }
 
+  .content_img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .content_img img{
+    width: 40%;
+  }
 
   /* config responsivo contact */
 
@@ -372,24 +496,12 @@ h4.endereco span{
     width: 100%;
   }
 
-}
-
-
-/*config do Rodapé*/
-
-footer {
-  background-color: #eb9f7e;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+  .footer_father{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
 
-footer p {
-  margin: 0px;
-}
 
-footer a {
-  color: black;
-  text-decoration: none;
-}
