@@ -31,10 +31,11 @@
   </header>
   <!-- Conteudo para o site -->
   <main>
-    <section id="home">
+    <section id="home" class="banner">
       <div class="home_father">
 
         <div class="text_home">
+          
           <h1>
             Pucarelli & Lugon Pediatria
           </h1>
@@ -54,12 +55,11 @@
           </div>
         </div>
 
-        <div class="img_home">
-          <picture>
-            <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
-          </picture>
-        </div>
-      </div>
+         <div class="img_home">
+            <!--<picture>
+              <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
+            </picture>
+        </div>-->
     </section>
 
     <section id="about">
@@ -78,13 +78,14 @@
       </div>
 
       <div class="intro_father">
-
+        
+        <!--ANCORA QUE ABRE O MODAL LUGON-->
         <div class="intro_son">
           <ul>
             <!--ANCORA QUE ABRE O MODAL-->
             <a href="#modal_lugon" target="_self" rel="author">
               <li>
-                <img src="img/conteudo/equipe.jpg" alt="">
+                <img src="img/conteudo/img_lugon.jpg" alt="">
               </li>
               <li>
                 Dra. Pamella Lugon
@@ -107,11 +108,16 @@
 
             <div class="modal_content_father">
               <div class="content_img">
-                <img src="img/conteudo/equipe.jpg" alt="">
+                <img src="img/conteudo/img_lugon2.jpg" alt="">
               </div>
               <div class="content_text">
                 <div class="name_dra">
-                  <h3>Dra. Pamella Lugon</h3>
+                  <h3>
+                    Dra. Pamella Lugon 
+                    <a href="https://www.instagram.com/pamellalugon_pediatria/" target="_blank" rel="external">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                  </h3>
                 </div>
                 <div class="list_dra">
                   <ul>
@@ -126,14 +132,13 @@
           </div>
         </div>
 
-
-
+        <!--ANCORA QUE ABRE O MODAL PUCARELLI-->
         <div class="intro_son">
           <ul>
             <!--ANCORA QUE ABRE O MODAL-->
             <a href="#modal_pucarelli " target="_self" rel="author">
               <li>
-                <img src="img/conteudo/equipe.jpg" alt="">
+                <img src="img/conteudo/img_pucarelli.jpg " alt="">
               </li>
               <li>
                 Dra. Giuliana Pucarelli
@@ -145,85 +150,95 @@
           </ul>
         </div>
 
-        <!--MODAL 2-->
+        <!--MODAL PUCARELLI-->
         <div id="modal_pucarelli" class="modal">
-          
-          <div class="modal_content_father">
-
-            <div class="content_img">
-              <img src="img/conteudo/equipe.jpg" alt="">
-            </div>
-
-            <div class="content_text">
-              <div class="name_dra">
-                <h3>Dra. Giuliana Pucarelli</h3>
-              </div>
-              <div class="list_dra">
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
-              </div>
-            </div>
+          <div class="modal_intro">
 
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
+
+            <div class="modal_content_father">
+              <div class="content_img">
+                <img src="img/conteudo/img_pucarelli2.jpg" alt="">
+              </div>
+              <div class="content_text">
+                <div class="name_dra">
+                  <h3>Dra. Giuliana Pucarelli
+                    <a href="https://www.instagram.com/giulianapucarelli_pediatria/" target="_blank" rel="external">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                  </h3>
+                </div>
+                <div class="list_dra">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-
+        <!--ANCORA QUE ABRE O MODAL-->
         <div class="intro_son">
           <ul>
-            <!--ANCORA QUE ABRE O MODAL-->
             <a href="#demo-modal3" target="_self" rel="author">
               <li>
-                <img src="img/conteudo/equipe.jpg" alt="Pamella Lugon">
+                <img src="img/conteudo/img_lugon.jpg" alt="Pamella Lugon">
               </li>
               <li>
                 Nome Completo
               </li>
               <li>
-                Especialidade
+                <!--<iframe src="https://calendar.google.com/calendar/embed?src=pt.brazilian%23holiday%40group.v.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
               </li>
             </a>
           </ul>
         </div>
 
         <!--MODAL 3-->
-                <div id="modal_lugon" class="modal">
-          
-          <div class="modal_content_father">
-
-            <div class="content_img">
-              <img src="img/conteudo/equipe.jpg" alt="">
-            </div>
-
-            <div class="content_text">
-              <div class="name_dra">
-                <h3>Dra. Pamella Lugon</h3>
-              </div>
-              <div class="list_dra">
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
-              </div>
-            </div>
+        <div id="demo-modal3" class="modal">
+          <div class="modal_intro">
 
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
+
+            <div class="modal_content_father">
+
+              <div class="content_img">
+                <!--Teste para a mudança de foto quando ficar no max-width de 950px-->
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/conteudo/img_lugon4_resized.jpg" type="image/png">
+
+                  <img src="img/conteudo/img_pucarelli2.jpg" alt="Imagem flexível">
+              </picture>
+              </div>
+
+              <div class="content_text">
+                <div class="name_dra">
+                  <h3>demo-modal3</h3>
+                </div>
+                <div class="list_dra">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>  
+        </div>
 
       </div>
 
