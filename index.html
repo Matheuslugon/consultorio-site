@@ -31,20 +31,23 @@
   </header>
   <!-- Conteudo para o site -->
   <main>
-    <section id="home">
+    <section id="home" class="banner">
       <div class="home_father">
 
         <div class="text_home">
+          
           <h1>
             Pucarelli & Lugon Pediatria
           </h1>
           <h2>
-            Sejá Bem vindo.  
+            Sejá Bem vindo.
           </h2>
           <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sed eum suscipit porro ea, deserunt,
-          aliquid voluptatibus nisi sequi consequuntur neque? Corporis incidunt blanditiis molestiae nostrum, a
-          veritatis modi ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem illo eum laudantium nobis deserunt commodi error accusantium. Tenetur voluptatibus soluta ad tempora odio mollitia numquam itaque voluptate voluptates repellat. Non?</p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sed eum suscipit porro ea, deserunt,
+            aliquid voluptatibus nisi sequi consequuntur neque? Corporis incidunt blanditiis molestiae nostrum, a
+            veritatis modi ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem illo eum
+            laudantium nobis deserunt commodi error accusantium. Tenetur voluptatibus soluta ad tempora odio mollitia
+            numquam itaque voluptate voluptates repellat. Non?</p>
           <div class="consulta">
             <a href="#contact">
               <strong>AGENDE SUA CONSULTA</strong>
@@ -52,12 +55,11 @@
           </div>
         </div>
 
-        <div class="img_home">
-          <picture>
-            <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
-          </picture>
-        </div>
-      </div>
+         <div class="img_home">
+            <!--<picture>
+              <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
+            </picture>
+        </div>-->
     </section>
 
     <section id="about">
@@ -70,52 +72,76 @@
       <div class="travessao"></div>
       <div class="text_team">
         <h1>Equipe</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam voluptatum, maxime obcaecati accusantium culpa recusandae ipsa ullam nihil libero minima. Rem illo numquam sit animi deleniti nemo, modi fugit!</p>
-        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam voluptatum, maxime obcaecati accusantium
+          culpa recusandae ipsa ullam nihil libero minima. Rem illo numquam sit animi deleniti nemo, modi fugit!</p>
+
       </div>
 
       <div class="intro_father">
-
+        
+        <!--ANCORA QUE ABRE O MODAL LUGON-->
         <div class="intro_son">
           <ul>
-            <a href="#" target="_blank" rel="author">
+            <!--ANCORA QUE ABRE O MODAL-->
+            <a href="#modal_lugon" target="_self" rel="author">
               <li>
-                <img src="img/conteudo/equipe.jpg" alt="">
+                <img src="img/conteudo/img_lugon.jpg" alt="">
               </li>
               <li>
-                Nome Completo
+                Dra. Pamella Lugon
               </li>
               <li>
                 Especialidade
               </li>
-          </a>
+            </a>
           </ul>
         </div>
+        <!--MODAL LUGON-->
+        <div id="modal_lugon" class="modal">
+          <div class="modal_intro">
 
-        <div class="intro_son">
-          <ul>
-            <a href="#" target="_blank" rel="author">
-              <li>
-                <img src="img/conteudo/equipe.jpg" alt="">
-              </li>
-              <li>
-                Nome Completo
-              </li>
-              <li>
-                Especialidade
-              </li>
-          </a>
-          </ul>
+            <div class="modal_close">
+              <a href="#team" class="modal_close">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
+
+            <div class="modal_content_father">
+              <div class="content_img">
+                <img src="img/conteudo/img_lugon2.jpg" alt="">
+              </div>
+              <div class="content_text">
+                <div class="name_dra">
+                  <h3>
+                    Dra. Pamella Lugon 
+                    <a href="https://www.instagram.com/pamellalugon_pediatria/" target="_blank" rel="external">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                  </h3>
+                </div>
+                <div class="list_dra">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!--ANCORA QUE ABRE O MODAL PUCARELLI-->
         <div class="intro_son">
           <ul>
-            <a href="#" target="_blank" rel="author">
+            <!--ANCORA QUE ABRE O MODAL-->
+            <a href="#modal_pucarelli " target="_self" rel="author">
               <li>
-                <img src="img/conteudo/equipe.jpg" alt="Pamella Lugon">
+                <img src="img/conteudo/img_pucarelli.jpg " alt="">
               </li>
               <li>
-                Nome Completo
+                Dra. Giuliana Pucarelli
               </li>
               <li>
                 Especialidade
@@ -124,65 +150,155 @@
           </ul>
         </div>
 
+        <!--MODAL PUCARELLI-->
+        <div id="modal_pucarelli" class="modal">
+          <div class="modal_intro">
+
+            <div class="modal_close">
+              <a href="#team" class="modal_close">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
+
+            <div class="modal_content_father">
+              <div class="content_img">
+                <img src="img/conteudo/img_pucarelli2.jpg" alt="">
+              </div>
+              <div class="content_text">
+                <div class="name_dra">
+                  <h3>Dra. Giuliana Pucarelli
+                    <a href="https://www.instagram.com/giulianapucarelli_pediatria/" target="_blank" rel="external">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                  </h3>
+                </div>
+                <div class="list_dra">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ANCORA QUE ABRE O MODAL-->
+        <div class="intro_son">
+          <ul>
+            <a href="#demo-modal3" target="_self" rel="author">
+              <li>
+                <img src="img/conteudo/img_lugon.jpg" alt="Pamella Lugon">
+              </li>
+              <li>
+                Nome Completo
+              </li>
+              <li>
+                <!--<iframe src="https://calendar.google.com/calendar/embed?src=pt.brazilian%23holiday%40group.v.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <!--MODAL 3-->
+        <div id="demo-modal3" class="modal">
+          <div class="modal_intro">
+
+            <div class="modal_close">
+              <a href="#team" class="modal_close">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
+
+            <div class="modal_content_father">
+
+              <div class="content_img">
+                <!--Teste para a mudança de foto quando ficar no max-width de 950px-->
+                <picture>
+                  <source media="(max-width: 750px)" srcset="img/conteudo/img_lugon4_resized.jpg" type="image/png">
+
+                  <img src="img/conteudo/img_pucarelli2.jpg" alt="Imagem flexível">
+              </picture>
+              </div>
+
+              <div class="content_text">
+                <div class="name_dra">
+                  <h3>demo-modal3</h3>
+                </div>
+                <div class="list_dra">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section>
 
     <section class="contact" id="contact">
       <div class="travessao"></div>
-      <h1 id="contact_top" >Contato</h1>
+      <h1 id="contact_top">Contato</h1>
       <div class="contact_father">
 
         <div class="contact_son">
           <ul>
             <a href="#" target="_blank" rel="author">
-            <li>
-              <i class="fa-brands fa-square-whatsapp"></i>
-            </li>
-            <li> 
-              <a href="#" target="_blank" rel="author">
-                Whatsapp <br> (21)986028193  
-            </li>
-          </a>  
+              <li>
+                <i class="fa-brands fa-square-whatsapp"></i>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="author">
+                  Whatsapp <br> (21)986028193
+              </li>
+            </a>
           </ul>
         </div>
 
 
         <div class="contact_son">
           <a href="#" target="_blank" rel="author">
-          <ul>
-            <li>
-              <i class="fa-solid fa-square-envelope"></i>
-            </li>
-            <li>   
-              Email <br> <span>excontato@yahoo.com</span>
-            </li>
-          </ul>
-        </a>
+            <ul>
+              <li>
+                <i class="fa-solid fa-square-envelope"></i>
+              </li>
+              <li>
+                Email <br> <span>excontato@yahoo.com</span>
+              </li>
+            </ul>
+          </a>
         </div>
 
         <div class="contact_son">
           <a href="#" target="_blank" rel="author">
-          <ul>
-            <li>
+            <ul>
+              <li>
                 <i class="fa-solid fa-square-phone"></i>
-            </li>
-            <li> 
+              </li>
+              <li>
                 Telefone <br> (21)986028193
-            </li>
-          </ul>
-        </a>
+              </li>
+            </ul>
+          </a>
         </div>
 
 
       </div>
 
       <h4 class="endereco">
-        <a href="#" target="_blank"> 
+        <a href="#" target="_blank">
           <i class="fa-solid fa-location-dot"></i>
-            <span>
-              Rua Iriguati, 289 - Olaria, Rio de Janeiro - RJ
-            </span>
+          <span>
+            Rua Iriguati, 289 - Olaria, Rio de Janeiro - RJ
+          </span>
         </a>
       </h4>
 
@@ -193,10 +309,25 @@
       </div>
     </section>
   </main>
- <footer>
-    <p>Pucarelli & Lugon Pediatria autor <a href="https://www.linkedin.com/in/matheus-lugon-7b7b901b6/">Matheus
-        Lugon</a></p>
-    </footer>
+  <footer>
+    <div class="footer_father">
+      <div class="footer_text">
+        <p>
+          <i class="fa-regular fa-copyright"></i>
+          <strong>2023 - Todos os direitos reservados.</strong>
+        </p>
+      </div>
+
+      <div class="footer_icon">
+        <a href="https://www.linkedin.com/matheus-lugon-7b7b901b6">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Matheuslugon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
