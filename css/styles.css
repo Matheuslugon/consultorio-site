@@ -133,13 +133,15 @@ section p {
 /* Config da section home*/
 
 .banner{
-  background-image: url(../img/conteudo/home3.jpeg);
+  background-image: url(../img/conteudo/home1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
   border-bottom: 4px solid var(--cor007);
 }
+
+
 
 .home_father {
   display: flex;
@@ -205,6 +207,9 @@ section p {
   border-radius: 5px;
   box-shadow: 2px 2px 10px 0px #9f7856;
 }
+
+/* Config da section about*/
+
 
 /* Config da section team*/ 
 
@@ -379,26 +384,32 @@ section p {
 .contact_son i {
   list-style: none;
   color: #9f6b55;
-  font-size: 60px;
+  font-size: 50px;
   margin-left: 15px;
 }
 
 .contact_son a {
   text-decoration: none;
   color: #9f6b55;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.endereco {
+  display: flex;
 }
 
 h4.endereco a {
   text-decoration: none;
   color: #9f6b55;
   margin-top: 25px;
-  
+  text-align: center;  
 }
 
 h4.endereco span{
   margin-left: 5px;
+  
 }
+
 .maps_son {
   display: flex;
   justify-content: center;
