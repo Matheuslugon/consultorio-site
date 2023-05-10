@@ -5,35 +5,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
   <title>Pucarelli & Lugon Pediatria</title>
 </head>
 
 <body>
-  <header>
-    <a id="logo-mobile" href="#home"><img src="img/logo/favicon_branco.ico" alt="Pucarelli & Lugon Pediatria">
-    </a>
-    <nav>
-      <!--  Menu para desktop -->
-      <ul class="menu-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Quem Somos</a></li>
-        <li><a href="#team">Equipe</a></li>
-        <li><a href="#contact">Contato</a></li>
+  <header class="fixed-top">
+    <div class="container-md d-flex justify-content-between align-items-center">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo/favicon_branco.ico" alt="Pucarelli & Lugon Pediatria">
+          </a>
+        </div>
+      </nav>
+
+      <ul class="menu-links d-none d-md-flex navbar-nav flex-row gap-4 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Equipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contato</a></li>
+        </li>
       </ul>
-      <!--Menu para mobile  -->
-      <div class="menu-icon">
+
+      <!--Icon menu mobile  -->
+      <button 
+        class="menu-icon d-flex align-items-center justify-content-center fs-3 d-md-none" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasNavbar" 
+        aria-controls="offcanvasNavbar" 
+        aria-label="Toggle navigation"
+      >
         <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!--Conteudo menu mobile-->
+
+    </div>
+
+    <div class="offcanvas offcanvas-end bg-body menu-responsivo" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo/favicon.ico" alt="">
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </nav>
+    
+      <div class="offcanvas-body">
+        <ul class="menu-links d-flex navbar-nav c gap-4 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link c-rosa" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-rosa" href="#about">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-rosa" href="#team">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c-rosa" href="#contact">Contato</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   </header>
   <!-- Conteudo para o site -->
+
   <main>
     <section id="home" class="banner">
       <div class="home_father">
-
+  
         <div class="text_home">
           
           <h1>
@@ -54,40 +109,40 @@
             </a>
           </div>
         </div>
-
+  
          <div class="img_home">
             <!--<picture>
               <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
             </picture>
         </div>-->
     </section>
-
+  
     <section id="about">
       <div class="travessao"></div>
       <h1>Sobre</h1>
-
-
-
+  
+  
+  
     <!--Texto intro_about-->
       <div>
         <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
-
-
-
+  
+  
+  
     </section>
-
+  
     <section id="team">
       <div class="travessao"></div>
       <div class="text_team">
         <h1>Equipe</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam voluptatum, maxime obcaecati accusantium
           culpa recusandae ipsa ullam nihil libero minima. Rem illo numquam sit animi deleniti nemo, modi fugit!</p>
-
+  
       </div>
-
-      <div class="intro_father">
+  
+      <div class="intro_father d-flex flex-column flex-md-row gap-5">
         
         <!--ANCORA QUE ABRE O MODAL LUGON-->
         <div class="intro_son">
@@ -109,13 +164,13 @@
         <!--MODAL LUGON-->
         <div id="modal_lugon" class="modal">
           <div class="modal_intro">
-
+  
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
-
+  
             <div class="modal_content_father">
               <div class="content_img">
                 <img src="img/conteudo/img_lugon2.jpg" alt="">
@@ -141,7 +196,7 @@
             </div>
           </div>
         </div>
-
+  
         <!--ANCORA QUE ABRE O MODAL PUCARELLI-->
         <div class="intro_son">
           <ul>
@@ -159,17 +214,17 @@
             </a>
           </ul>
         </div>
-
+  
         <!--MODAL PUCARELLI-->
         <div id="modal_pucarelli" class="modal">
           <div class="modal_intro">
-
+  
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
-
+  
             <div class="modal_content_father">
               <div class="content_img">
                 <img src="img/conteudo/img_pucarelli2.jpg" alt="">
@@ -194,7 +249,7 @@
             </div>
           </div>
         </div>
-
+  
         <!--ANCORA QUE ABRE O MODAL-->
         <div class="intro_son">
           <ul>
@@ -212,28 +267,28 @@
             </a>
           </ul>
         </div>
-
+  
         <!--MODAL 3-->
         <div id="demo-modal3" class="modal">
           <div class="modal_intro">
-
+  
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
-
+  
             <div class="modal_content_father">
-
+  
               <div class="content_img">
                 <!--Teste para a mudança de foto quando ficar no max-width de 950px-->
                 <picture>
                   <source media="(max-width: 750px)" srcset="img/conteudo/img_lugon4_resized.jpg" type="image/png">
-
+  
                   <img src="img/conteudo/img_pucarelli2.jpg" alt="Imagem flexível">
               </picture>
               </div>
-
+  
               <div class="content_text">
                 <div class="name_dra">
                   <h3>demo-modal3</h3>
@@ -250,58 +305,66 @@
             </div>
           </div>
         </div>
-
+  
       </div>
-
+  
     </section>
-
+  
     <section class="contact" id="contact">
       <div class="travessao"></div>
       <h1 id="contact_top">Contato</h1>
-      <div class="contact_father">
 
-        <div class="contact_son">
-          <ul>
-            <a href="#" target="_blank" rel="author">
-              <li>
-                <i class="fa-brands fa-square-whatsapp"></i>
-              </li>
-              <li>
+      <div class="container-fluid bg-white">
+        <div class="container pt-5 pb-5 d-flex justify-content-center">
+          <div class="wrapper-cards d-flex flex-column flex-lg-row gap-4 gap-lg-4 align-items-center justify-content-center">
+            <div class="card w-100">
+              <div class="card-body contact_son">
                 <a href="#" target="_blank" rel="author">
-                  Whatsapp <br> (21)986028193
-              </li>
-            </a>
-          </ul>
+                <ul>
+                    <li>
+                      <i class="fa-brands fa-square-whatsapp"></i>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" rel="author">
+                        Whatsapp <br> (21)986028193
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="card w-100">
+              <div class="card-body contact_son">
+                <a href="#" target="_blank" rel="author">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-square-envelope"></i>
+                    </li>
+                    <li>
+                      Email <br> <span>excontato@yahoo.com</span>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+  
+            <div class="card w-100">
+              <div class="card-body contact_son">
+                <a href="#" target="_blank" rel="author">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-square-phone"></i>
+                    </li>
+                    <li>
+                      Telefone <br> (21)986028193
+                    </li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-        <div class="contact_son">
-          <a href="#" target="_blank" rel="author">
-            <ul>
-              <li>
-                <i class="fa-solid fa-square-envelope"></i>
-              </li>
-              <li>
-                Email <br> <span>excontato@yahoo.com</span>
-              </li>
-            </ul>
-          </a>
-        </div>
-
-        <div class="contact_son">
-          <a href="#" target="_blank" rel="author">
-            <ul>
-              <li>
-                <i class="fa-solid fa-square-phone"></i>
-              </li>
-              <li>
-                Telefone <br> (21)986028193
-              </li>
-            </ul>
-          </a>
-        </div>
-
-
+      
       </div>
 
       <h4 class="endereco">
@@ -312,7 +375,7 @@
           </span>
         </a>
       </h4>
-
+  
       <div class="maps_son">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.6151391493095!2d-43.27484598503539!3d-22.853724085038845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b8ac216054d%3A0x5250a1c79d53fc64!2sR.%20Iriguati%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021073-320!5e0!3m2!1spt-BR!2sbr!4v1680666822167!5m2!1spt-BR!2sbr"
@@ -328,7 +391,7 @@
           <strong>2023 - Todos os direitos reservados.</strong>
         </p>
       </div>
-
+  
       <div class="footer_icon">
         <a href="https://www.linkedin.com/matheus-lugon-7b7b901b6">
           <i class="fa-brands fa-linkedin"></i>
@@ -339,6 +402,9 @@
       </div>
     </div>
   </footer>
+
 </body>
 
+  <script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>

@@ -10,19 +10,29 @@
   --cor009: #e9a9bc;
   --cor010: #e9a9be;
   --cor011: #ee9db8;
+  --white: #fff;
+}
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-body{
+  background-color: var(--cor003) !important;
 
 }
 
+.c-rosa{
+  color: var(--cor008) !important; 
+}
+
+.menu-responsivo{
+  width: 350px;
+}
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: var(--cor009);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   box-shadow: 9px 4px 4px rgba(0, 0, 0, .1);
 }
 
@@ -45,51 +55,26 @@ nav {
 }
 
 .menu-icon {
-  display: none;
-  cursor: pointer;
-
-}
-
-
-.menu-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-}
-
-.menu-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-links li {
-  margin: 10px;
+  width: 50px;
+  height: 50px;
+  color: var(--white);
+  border: none;
+  background-color: transparent;
 }
 
 .menu-links li a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
   border-radius: 10px;
 }
 
 .menu-links li a:hover {
   background-color: var(--cor011);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  color: var(--white);
 }
 
 section {
@@ -222,11 +207,6 @@ section p {
   margin: 12px 16%;
 }
 
-.intro_father{
-  display: flex;
-  gap: 75px;
-}
-
 .intro_son ul{
   padding: 0px;
   width: 100%;  
@@ -348,36 +328,27 @@ section p {
   margin-bottom: 80px;
 }
 
-.contact_father {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 10px;
-  gap: 50px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+@media screen and (min-width: 926px){
+  .wrapper-cards{
+    max-width: 75%;
+    width: 100%;
+  }
 }
 
 .contact_son {
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  align-items: center;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0px #9f7856;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
 
 .contact_son ul {
+  width: 100%;
   list-style: none;
   display: flex;
-  background-color: white;
-  border-radius: 10px;
-  padding: 12px 12px 12px 12px;
-  margin-top: 30px;
-  width: 250px;
-  height: 65px;
-  gap: 36px;
-  box-shadow: 4px 4px 8px 0px #9f7856;
+  padding: 0;
+  gap: 20px;
+  margin-bottom: 0;
   align-items: center;
 }
 
@@ -385,7 +356,6 @@ section p {
   list-style: none;
   color: #9f6b55;
   font-size: 50px;
-  margin-left: 15px;
 }
 
 .contact_son a {
@@ -463,12 +433,7 @@ footer a {
 
 /* Config do responsivo*/
 
-@media (max-width: 950px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+@media (min-width: 768px) {
 
   section {
     padding-top: 90px;
@@ -477,25 +442,6 @@ footer a {
   nav {
     display: flex;
     align-items: center;
-  }
-
-  #logo-mobile {
-    display: flex;
-
-  }
-
-  .menu-icon {
-    display: flex;
-    margin: 20px 20px;
-    color: aquamarine;
-  }
-
-  .menu-links {
-    display: none;
-  }
-
-  .menu-links.active {
-    display: flex;
   }
 
   /* config responsivo home */
@@ -517,12 +463,6 @@ footer a {
   }
 
   /* config responsivo team*/
-
-  .intro_father{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
  
   /* Config responsivo modal */
   .modal_content_father{
@@ -535,17 +475,6 @@ footer a {
   }
 
   /* config responsivo contact */
-
-  .contact_father {
-    flex-direction: column;
-    gap: 0px;
-
-  }
-  .contact_son {
-    padding: 0px;
-    margin-top: 0px;
-
-  }
 
   .maps {
     display: flex;
