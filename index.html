@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
     <div class="container-md d-flex justify-content-between align-items-center">
       <nav class="navbar">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#home">
             <img src="img/logo/favicon_branco.ico" alt="Pucarelli & Lugon Pediatria">
           </a>
         </div>
@@ -36,19 +37,15 @@
           <a class="nav-link" href="#team">Equipe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contato</a></li>
+          <a class="nav-link" href="#contact">Contato</a>
+        </li>
         </li>
       </ul>
 
       <!--Icon menu mobile  -->
-      <button 
-        class="menu-icon d-flex align-items-center justify-content-center fs-3 d-md-none" 
-        type="button" 
-        data-bs-toggle="offcanvas" 
-        data-bs-target="#offcanvasNavbar" 
-        aria-controls="offcanvasNavbar" 
-        aria-label="Toggle navigation"
-      >
+      <button class="menu-icon d-flex align-items-center justify-content-center fs-3 d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
 
@@ -56,14 +53,16 @@
 
     </div>
 
-    <div class="offcanvas offcanvas-end bg-body menu-responsivo" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end bg-body menu-responsivo" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
 
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo/favicon.ico" alt="">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo/favicon.ico"
+            alt="Pucarelli & Lugon Pediatria">
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    
+
       <div class="offcanvas-body">
         <ul class="menu-links d-flex navbar-nav c gap-4 align-items-center">
           <li class="nav-item">
@@ -76,21 +75,22 @@
             <a class="nav-link c-rosa" href="#team">Equipe</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link c-rosa" href="#contact">Contato</a></li>
+            <a class="nav-link c-rosa" href="#contact">Contato</a>
+          </li>
           </li>
         </ul>
       </div>
     </div>
-    
+
   </header>
   <!-- Conteudo para o site -->
 
   <main>
     <section id="home" class="banner">
       <div class="home_father">
-  
+
         <div class="text_home">
-          
+
           <h1>
             Pucarelli & Lugon Pediatria
           </h1>
@@ -109,41 +109,36 @@
             </a>
           </div>
         </div>
-  
-         <div class="img_home">
-            <!--<picture>
-              <img src="img/conteudo/img_home.jpeg" alt="Pucarelli & Lugon Pediatria">
-            </picture>
-        </div>-->
+
     </section>
-  
+
     <section id="about">
       <div class="travessao"></div>
       <h1>Sobre</h1>
-  
-  
-  
-    <!--Texto intro_about-->
+
+
+
+      <!--Texto intro_about-->
       <div>
         <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
-  
-  
-  
+
+
+
     </section>
-  
+
     <section id="team">
       <div class="travessao"></div>
       <div class="text_team">
         <h1>Equipe</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam voluptatum, maxime obcaecati accusantium
           culpa recusandae ipsa ullam nihil libero minima. Rem illo numquam sit animi deleniti nemo, modi fugit!</p>
-  
+
       </div>
-  
-      <div class="intro_father d-flex flex-column flex-md-row gap-5">
-        
+
+      <div class="intro_father d-flex flex-column flex-md-row ">
+
         <!--ANCORA QUE ABRE O MODAL LUGON-->
         <div class="intro_son">
           <ul>
@@ -156,7 +151,7 @@
                 Dra. Pamella Lugon
               </li>
               <li>
-                Especialidade
+                Neonatologista <br> Pediatria
               </li>
             </a>
           </ul>
@@ -164,13 +159,13 @@
         <!--MODAL LUGON-->
         <div id="modal_lugon" class="modal">
           <div class="modal_intro">
-  
+
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
-  
+
             <div class="modal_content_father">
               <div class="content_img">
                 <img src="img/conteudo/img_lugon2.jpg" alt="">
@@ -178,25 +173,27 @@
               <div class="content_text">
                 <div class="name_dra">
                   <h3>
-                    Dra. Pamella Lugon 
+                    Dra. Pamella Lugon
                     <a href="https://www.instagram.com/pamellalugon_pediatria/" target="_blank" rel="external">
                       <i class="fa-brands fa-instagram"></i>
-                    </a> 
+                    </a>
                   </h3>
                 </div>
                 <div class="list_dra">
                   <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Graduada pela Universidade Federal do Rio de Janeiro - UFRJ (2009-2014)</li>
+                    <li>Residência Médica em Pediatria no Hospital Universitário Pedro Ernesto (2015-2017)</li>
+                    <li>Residência Médica em Neonatologia no Instituto Fernandes Figueira - IFF/FIOCRUZ (2017-2019)</li>
+                    <li>Mestrado em Medicina Tropical pelo Instituto Oswaldo Cruz - FIOCRUZ (2019 - 2021)</li>
+                    <li>Professora de Saúde da Criança e do Adolescente da Universidade Estácio de Sá</li>
+                    <li>Médica Neonatologista no Hospital Universitário Antônio Pedro - HUAP/UFF</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <!--ANCORA QUE ABRE O MODAL PUCARELLI-->
         <div class="intro_son">
           <ul>
@@ -209,22 +206,22 @@
                 Dra. Giuliana Pucarelli
               </li>
               <li>
-                Especialidade
+                Infectologista <br> Pediatria
               </li>
             </a>
           </ul>
         </div>
-  
+
         <!--MODAL PUCARELLI-->
         <div id="modal_pucarelli" class="modal">
           <div class="modal_intro">
-  
+
             <div class="modal_close">
               <a href="#team" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
-  
+
             <div class="modal_content_father">
               <div class="content_img">
                 <img src="img/conteudo/img_pucarelli2.jpg" alt="">
@@ -234,24 +231,28 @@
                   <h3>Dra. Giuliana Pucarelli
                     <a href="https://www.instagram.com/giulianapucarelli_pediatria/" target="_blank" rel="external">
                       <i class="fa-brands fa-instagram"></i>
-                    </a> 
+                    </a>
                   </h3>
                 </div>
                 <div class="list_dra">
                   <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Graduada pela Universidade Federal do Rio de Janeiro - UFRJ (2008-2014)</li>
+                    <li>Residência Médica em Pediatria no Hospital Universitário Pedro Ernesto (2015-2017)</li>
+                    <li>Residência Médica em Infectologia Pediátrica no Instituto de Puericultura e Pediatria Martagão
+                      Gesteira - IPPMG/UFRJ (2017-2019)</li>
+                    <li>Mestrado em Doenças Infecciosas e Parasitárias (DIP) pela Universidade Federal do Rio de Janeiro
+                      - UFRJ</li>
+                    <li>Médica Infectologista no Instituto de Puericultura e Pediatria Martagão Gesteira - IPPMG/UFRJ.
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <!--ANCORA QUE ABRE O MODAL-->
-        <div class="intro_son">
+        <!--<div class="intro_son">
           <ul>
             <a href="#demo-modal3" target="_self" rel="author">
               <li>
@@ -268,8 +269,8 @@
           </ul>
         </div>
   
-        <!--MODAL 3-->
-        <div id="demo-modal3" class="modal">
+         MODAL 3-->
+        <!-- <div id="demo-modal3" class="modal">
           <div class="modal_intro">
   
             <div class="modal_close">
@@ -281,7 +282,7 @@
             <div class="modal_content_father">
   
               <div class="content_img">
-                <!--Teste para a mudança de foto quando ficar no max-width de 950px-->
+              <Teste para a mudança de foto quando ficar no max-width de 950px>
                 <picture>
                   <source media="(max-width: 750px)" srcset="img/conteudo/img_lugon4_resized.jpg" type="image/png">
   
@@ -302,25 +303,53 @@
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-  
+            </div>-->
+
       </div>
-  
+            <!--Carousel das dicas-->
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner d-flex">
+                <div class="carousel-item active">
+                  <h3>Texto do item 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
+                </div>
+                <div class="carousel-item">
+                  <h3>Texto do item 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
+                </div>
+                <div class="carousel-item">
+                  <h3>Texto do item 3</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
+                </div>
+              </div>
+              <div class="direction">
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+
+
     </section>
-  
+
     <section class="contact" id="contact">
       <div class="travessao"></div>
       <h1 id="contact_top">Contato</h1>
 
       <div class="container-fluid bg-white">
         <div class="container pt-5 pb-5 d-flex justify-content-center">
-          <div class="wrapper-cards d-flex flex-column flex-lg-row gap-4 gap-lg-4 align-items-center justify-content-center">
+          <div
+            class="wrapper-cards d-flex flex-column flex-lg-row gap-4 gap-lg-4 align-items-center justify-content-center">
             <div class="card w-100">
               <div class="card-body contact_son">
                 <a href="#" target="_blank" rel="author">
-                <ul>
+                  <ul>
                     <li>
                       <i class="fa-brands fa-square-whatsapp"></i>
                     </li>
@@ -328,11 +357,11 @@
                       <a href="#" target="_blank" rel="author">
                         Whatsapp <br> (21)986028193
                     </li>
-                  </a>
+                </a>
                 </ul>
               </div>
             </div>
-  
+
             <div class="card w-100">
               <div class="card-body contact_son">
                 <a href="#" target="_blank" rel="author">
@@ -347,7 +376,7 @@
                 </a>
               </div>
             </div>
-  
+
             <div class="card w-100">
               <div class="card-body contact_son">
                 <a href="#" target="_blank" rel="author">
@@ -364,18 +393,20 @@
             </div>
           </div>
         </div>
-      
+
       </div>
 
       <h4 class="endereco">
         <a href="#" target="_blank">
           <i class="fa-solid fa-location-dot"></i>
           <span>
-            Rua Iriguati, 289 - Olaria, Rio de Janeiro - RJ
+            <strong>
+              Rua Iriguati, 289 - Olaria, Rio de Janeiro - RJ
+            </strong>
           </span>
         </a>
       </h4>
-  
+
       <div class="maps_son">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.6151391493095!2d-43.27484598503539!3d-22.853724085038845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b8ac216054d%3A0x5250a1c79d53fc64!2sR.%20Iriguati%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021073-320!5e0!3m2!1spt-BR!2sbr!4v1680666822167!5m2!1spt-BR!2sbr"
@@ -391,7 +422,7 @@
           <strong>2023 - Todos os direitos reservados.</strong>
         </p>
       </div>
-  
+
       <div class="footer_icon">
         <a href="https://www.linkedin.com/matheus-lugon-7b7b901b6">
           <i class="fa-brands fa-linkedin"></i>
@@ -405,6 +436,8 @@
 
 </body>
 
-  <script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/241d540593.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </html>
