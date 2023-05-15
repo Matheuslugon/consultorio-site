@@ -123,7 +123,6 @@ section p {
   background-size: cover;
   background-position: center;
   height: 100%;
-  border-bottom: 4px solid var(--cor007);
 }
 
 
@@ -179,6 +178,14 @@ section p {
 .consulta {
   display: flex;
   justify-content: center;
+}
+
+.open_query{
+  background-color: var(--cor006);
+}
+
+.open_query > p {
+  text-align: center;
 }
 
 
@@ -325,6 +332,13 @@ section p {
   margin-top: 50px;
 }
 
+#myCarousel {
+margin-top: 50px;
+text-align: -webkit-center;
+background-color: #e9a9bca8;
+padding: 10px 10px 50px 10px;
+}
+
 /* Config da section contact*/
 #contact_top{
   margin-bottom: 80px;
@@ -362,6 +376,12 @@ section p {
 }
 
 .contact_son a {
+  text-decoration: none;
+  color: #9f6b55;
+  font-size: 14px;
+}
+
+.contact_son li {
   text-decoration: none;
   color: #9f6b55;
   font-size: 14px;
@@ -468,6 +488,11 @@ footer a {
     margin-bottom: 20px;
   }
 
+  .open_query > p {
+    margin-left: 17%;
+    text-align: left;
+  }
+
   /* config responsivo team*/
  
   .intro_father{
@@ -481,8 +506,8 @@ footer a {
 
   #myCarousel{
     margin-top: 50px;
-    width: 80%;
     text-align: -webkit-center;
+
   }
 
   .carousel-inner {
