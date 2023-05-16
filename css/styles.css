@@ -13,20 +13,20 @@
   --white: #fff;
 }
 
-*{
+* {
   font-family: 'Raleway', sans-serif;
 }
 
-.bg-body{
+.bg-body {
   background-color: var(--cor003) !important;
 
 }
 
-.c-rosa{
-  color: var(--cor008) !important; 
+.c-rosa {
+  color: var(--cor008) !important;
 }
 
-.menu-responsivo{
+.menu-responsivo {
   width: 350px;
 }
 
@@ -95,14 +95,17 @@ section {
   flex-direction: column;
 }
 
-section .banner{
+section .banner {
   border: 2px solid black;
 }
+
 .travessao {
   width: 60px;
   height: 1px;
   margin: 10px auto 0;
   border-bottom: 2px solid #285b6e;
+  margin-top: -50px;
+
 }
 
 section h1 {
@@ -117,7 +120,7 @@ section p {
 
 /* Config da section home*/
 
-.banner{
+.banner {
   background-image: url(../img/conteudo/home1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +163,7 @@ section p {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  
+
 }
 
 .consulta a {
@@ -171,7 +174,7 @@ section p {
   text-align: center;
   padding: 20px 20px;
   border-radius: 44px;
-  box-shadow: 4px 4px 8px 0px #9f7856;  
+  box-shadow: 4px 4px 8px 0px #9f7856;
 
 }
 
@@ -180,11 +183,11 @@ section p {
   justify-content: center;
 }
 
-.open_query{
+.open_query {
   background-color: var(--cor006);
 }
 
-.open_query > p {
+.open_query>p {
   text-align: center;
 }
 
@@ -198,8 +201,16 @@ section p {
 
 /* Config da section about*/
 
+.father_about{
+ flex-direction: column;
+}
 
-/* Config da section team*/ 
+#about_start{
+  margin-bottom: -80px;
+}
+
+
+/* Config da section team*/
 
 .text_team h1 {
   text-align: center;
@@ -210,14 +221,14 @@ section p {
   margin: 12px 16%;
 }
 
-.intro_father{
-  gap: 5px!;
+.intro_father {
+  gap: 5px !;
 }
 
-.intro_son ul{
+.intro_son ul {
   padding: 0px;
-  width: 100%; 
-  text-align: center; 
+  width: 100%;
+  text-align: center;
 }
 
 .intro_son ul a {
@@ -235,7 +246,7 @@ section p {
   flex-direction: column;
 }
 
-.intro_son img{
+.intro_son img {
   width: 150px;
 }
 
@@ -256,17 +267,17 @@ section p {
   transition: all 0.1s;
 }
 
-.modal_intro{
+.modal_intro {
   width: 100%;
 }
- 
+
 .modal:target {
   position: fixed;
   visibility: visible;
   opacity: 1;
 }
 
-.modal_content_father{
+.modal_content_father {
   background-color: #e9a9bc;
   display: flex;
   flex-direction: column;
@@ -278,30 +289,31 @@ section p {
   font-size: 13px;
 }
 
-.content_text{
+.content_text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.name_dra{
+.name_dra {
   display: flex;
 }
 
-.list_dra{
+.list_dra {
   display: flex;
 }
 
-.list_dra li{
+.list_dra li {
   margin-bottom: 10px;
 }
 
-.content_img{
+.content_img {
   display: flex;
   padding: 15px;
 }
-.content_img img{
+
+.content_img img {
   width: 150px;
   box-shadow: 3px 3px 2px 1px #865b6c;
   border-radius: 5px;
@@ -317,11 +329,34 @@ section p {
 
 .modal_close a {
   text-decoration: none;
-    color: black;
+  color: black;
 }
 
 .modal_close i {
   font-size: 23px;
+}
+
+
+.name_dra{
+  display: flex;
+  gap: 5px;
+}
+
+.name_son{
+  display: flex;
+}
+
+.insta_icon{
+  display: flex;
+  margin-top: 5px;
+}
+
+.name_dra a i{
+  font-size: 19px;
+  color: white;
+  background: linear-gradient(140deg, #A722EE, #FF227B ,#FA602C );
+  padding: 2px 4px 2px 4px;
+  border-radius: 6px;
 }
 
 .carousel-inner {
@@ -333,22 +368,28 @@ section p {
 }
 
 #myCarousel {
-margin-top: 50px;
-text-align: -webkit-center;
-background-color: #e9a9bca8;
-padding: 10px 10px 50px 10px;
+  margin-top: 50px;
+  text-align: -webkit-center;
+  background-color: #e9a9bca8;
+  padding: 0px 10px 50px 10px;
+}
+
+.dicas {
+ display: none;
+
 }
 
 /* Config da section contact*/
-#contact_top{
-  margin-bottom: 80px;
-}
 
-@media screen and (min-width: 926px){
-  .wrapper-cards{
+@media screen and (min-width: 926px) {
+  .wrapper-cards {
     max-width: 75%;
     width: 100%;
   }
+}
+
+#contact_top {
+  margin-bottom: 30px;
 }
 
 .contact_son {
@@ -400,7 +441,7 @@ h4.endereco a {
 
 }
 
-h4.endereco span{
+h4.endereco span {
   margin-left: 5px;
 
 }
@@ -434,29 +475,30 @@ footer a {
   text-decoration: none;
 }
 
-.footer_father{
+.footer_father {
   color: #9f6b55;
   display: flex;
   flex-direction: row;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  margin-top: 16px;
 }
 
-.footer_text{
+.footer_text {
   display: flex;
 }
 
-.footer_icon{
+.footer_icon {
   display: flex;
   gap: 10px;
 }
 
-.footer_icon i{
+.footer_icon i {
   color: #9f6b55;
 }
 
-/* Config do responsivo*/
+/* Config desktop*/
 
 @media (min-width: 768px) {
 
@@ -469,7 +511,7 @@ footer a {
     align-items: center;
   }
 
-  /* config responsivo home */
+  /* config home */
   .home_father {
     display: flex;
     flex-direction: column-reverse;
@@ -479,74 +521,119 @@ footer a {
 
   }
 
-  .text_home{
+  .text_home {
     width: 50%;
     margin-left: 15%;
   }
 
-  .consulta{
+  .consulta {
     margin-bottom: 20px;
   }
 
-  .open_query > p {
+  .open_query>p {
     margin-left: 17%;
     text-align: left;
   }
 
-  /* config responsivo team*/
- 
-  .intro_father{
+  /* config about*/
+
+  #about_start{
+    margin-bottom: 0px;
+  }
+
+  .father_about{
+    flex-direction: row;
+    padding: 0px 300px 0px 350px;
+    gap: 50px;
+  }
+
+  .intro_about{
+    width: 1000px;
+  }
+
+  .text_about{
+    width: 85%;
+  }
+
+
+  /* config team*/
+
+  .intro_father {
     gap: 3em;
-  }  
+  }
+
+  .intro_son ul a:hover {
+  
+    color: var(--cor008);
+    box-shadow: 4px 4px 8px 0px #a37b5991;
+
+  }
+
+
+  /* Config modal */
 
   .modal_content_father {
     display: flex;
     flex-direction: row;
   }
 
-  #myCarousel{
-    margin-top: 50px;
+  .list_dra {
+    display: flex;
+    margin-left: 50px;
+  }
+
+
+  .content_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content_img img {
+    width: 350px;
+  }
+
+  #myCarousel {
     text-align: -webkit-center;
 
   }
 
   .carousel-inner {
     position: relative;
-    width: 55%;
+    width: 100%;
     overflow: hidden;
     text-align: center;
-}
-
-
-  /* Config responsivo modal */
-
-  .content_img{
-    display: flex;
-    justify-content: center ;
   }
 
-  .content_img img {
-    width: 350px;
-}
+  #dicas{
+    width: 55%;
+  }
 
-  /* config responsivo contact */
+  .dicas {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #e9a9bca8;
+    padding-top: 10px;
+  }
+
+  /* config contact */
 
   .maps {
     display: flex;
     width: 100%;
     height: 100%;
   }
+
   .maps_son>iframe {
     margin-bottom: 0%;
     width: 40%;
   }
 
-  .footer_father{
+  .footer_father {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  } 
+    margin-top: -50px;
+  }
 
 }
-
-

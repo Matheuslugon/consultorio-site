@@ -116,24 +116,56 @@
     </div>
 
     <section id="about">
-      <div class="travessao"></div>
+      <div id="about_start" class="travessao"></div>
       <h1>Sobre</h1>
+      <!--Caroussel do about-->
+      <div class="father_about d-flex align-items-center ">
+        <div class="intro_about">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/conteudo/home1_resized.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/conteudo/home2_resized.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/conteudo/home3_resized.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
-
-
-      <!--Texto intro_about-->
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
+        <!--Texto intro_about-->
+        <div class="text_about d-flex flex-column"> 
+          <h3>
+            Um pouco da nossa historia
+          </h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum maxime enim impedit molestias quo iure, hic officia amet doloremque quis eligendi placeat in, vero tenetur neque ipsam unde praesentium odio?
+          </p>
+        </div>
       </div>
-
-
 
     </section>
 
     <section id="team">
-      <div class="travessao"></div>
+      <div id="team_start" class="travessao"></div>
       <div class="text_team">
         <h1>Equipe</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam voluptatum, maxime obcaecati accusantium
@@ -199,7 +231,7 @@
         </div>
 
         <!--ANCORA QUE ABRE O MODAL PUCARELLI-->
-        <div class="intro_son">
+        <div class="intro_son" id="close_giu">
           <ul>
             <!--ANCORA QUE ABRE O MODAL-->
             <a href="#modal_pucarelli " target="_self" rel="author">
@@ -221,7 +253,7 @@
           <div class="modal_intro">
 
             <div class="modal_close">
-              <a href="#team" class="modal_close">
+              <a href="#close_giu" class="modal_close">
                 <i class="fa-solid fa-xmark"></i>
               </a>
             </div>
@@ -231,12 +263,19 @@
                 <img src="img/conteudo/img_pucarelli2.jpg" alt="">
               </div>
               <div class="content_text">
+
                 <div class="name_dra">
-                  <h3>Dra. Giuliana Pucarelli
+                  <div class="name_son">
+                    <h3>
+                      Dra. Giuliana Pucarelli
+                    </h3>
+                  </div>
+                  <div class="insta_icon" >
                     <a href="https://www.instagram.com/giulianapucarelli_pediatria/" target="_blank" rel="external">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
-                  </h3>
+                  </div>
+
                 </div>
                 <div class="list_dra">
                   <ul>
@@ -311,19 +350,20 @@
 
       </div>
             <!--Carousel das dicas-->
-
+            <div class="dicas">
+              <h3>
+                <strong>Dicas das Dra.</strong>
+              </h3>
+            </div>
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner d-flex">
+              <div class="carousel-inner d-flex" id="dicas">
                 <div class="carousel-item active">
-                  <h3>Texto do item 1</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
                 </div>
                 <div class="carousel-item">
-                  <h3>Texto do item 2</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
                 </div>
                 <div class="carousel-item">
-                  <h3>Texto do item 3</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut fugiat quisquam dolore, voluptatibus possimus, ratione sint, amet incidunt tempora officia ducimus facilis magnam? Maiores nesciunt reprehenderit ea nemo sapiente.</p>
                 </div>
               </div>
@@ -405,7 +445,7 @@
           <i class="fa-solid fa-location-dot"></i>
           <span>
             <strong>
-              Rua Real Grandeza, 108, SL 314 - Rio de Janeiro, RJ
+              Real Grandeza, 108, SL 314 - Botafogo, RJ
             </strong>
           </span>
         </a>
