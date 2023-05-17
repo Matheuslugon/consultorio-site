@@ -137,9 +137,13 @@ section p {
 
 .text_home {
   display: flex;
-
   flex-direction: column;
   align-items: center;
+}
+
+.text_home p {
+  text-align: justify;
+  padding: 15px 25px 0px 25px;
 }
 
 .text_home h1 {
@@ -148,6 +152,8 @@ section p {
 }
 
 .text_home h2 {
+  font-size: 32px;
+  margin-top: 15px;
   color: var(--cor003);
   text-shadow: 2px 4px 6px black;
 }
@@ -205,10 +211,15 @@ section p {
  flex-direction: column;
 }
 
-#about_start{
-  margin-bottom: -80px;
+.text_about h3{
+  text-align: center;
+  padding: 15px 30px 0px 30px;
 }
 
+.text_about p{
+  text-align: justify;
+  padding: 0px 25px 0px 25px;
+}
 
 /* Config da section team*/
 
@@ -217,8 +228,8 @@ section p {
 }
 
 .text_team p {
-  text-align: center;
-  margin: 12px 16%;
+  text-align: justify;
+  padding: 15px 25px 0px 25px;
 }
 
 .intro_father {
@@ -381,13 +392,6 @@ section p {
 
 /* Config da section contact*/
 
-@media screen and (min-width: 926px) {
-  .wrapper-cards {
-    max-width: 75%;
-    width: 100%;
-  }
-}
-
 #contact_top {
   margin-bottom: 30px;
 }
@@ -500,6 +504,35 @@ footer a {
 
 /* Config desktop*/
 
+@media screen and (min-width: 1200px) {
+  .text_team{
+    width: 40%;
+  }
+  .father_about{
+    width: 66%;
+    flex-direction: row;
+    gap: 50px;
+}
+  }
+
+
+@media screen and (min-width: 926px) {
+  .wrapper-cards {
+    max-width: 75%;
+    width: 100%;
+  }
+
+  .intro_team{
+    width: 40%;
+  }
+
+  .intro_about{
+    width: 100%
+  }
+
+}
+
+
 @media (min-width: 768px) {
 
   section {
@@ -542,17 +575,17 @@ footer a {
   }
 
   .father_about{
-    flex-direction: row;
-    padding: 0px 300px 0px 350px;
+    width: 70%;
     gap: 50px;
+
   }
 
   .intro_about{
-    width: 1000px;
+    width: 95%;
   }
 
   .text_about{
-    width: 85%;
+    width: 100%;
   }
 
 
@@ -567,6 +600,10 @@ footer a {
     color: var(--cor008);
     box-shadow: 4px 4px 8px 0px #a37b5991;
 
+  }
+
+  .text_team{
+    width: 60%;
   }
 
 
