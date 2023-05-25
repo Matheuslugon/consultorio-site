@@ -95,10 +95,6 @@ section {
   flex-direction: column;
 }
 
-section .banner {
-  border: 2px solid black;
-}
-
 .travessao {
   width: 60px;
   height: 1px;
@@ -128,7 +124,9 @@ section p {
   height: 100%;
 }
 
-
+section .banner {
+  border: 2px solid black;
+}
 
 .home_father {
   text-align: center;
@@ -181,9 +179,11 @@ section p {
   padding: 20px 20px;
   border-radius: 44px;
   box-shadow: 4px 4px 8px 0px #9f7856;
-
 }
-
+.consulta a span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
 .consulta {
   display: flex;
   justify-content: center;
@@ -221,6 +221,10 @@ section p {
   padding: 0px 25px 0px 25px;
 }
 
+.button_img{
+  margin-top: 10%;
+}
+
 /* Config da section team*/
 
 .text_team h1 {
@@ -230,6 +234,11 @@ section p {
 .text_team p {
   text-align: justify;
   padding: 15px 25px 0px 25px;
+}
+
+.text_team h4 {
+  text-align: center;
+  padding: 25px 25px 0px 25px;
 }
 
 .intro_father {
@@ -370,6 +379,10 @@ section p {
   border-radius: 6px;
 }
 
+.carousel_master{
+  width: 100%;
+}
+
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -384,10 +397,13 @@ section p {
   background-color: #e9a9bca8;
   padding: 0px 10px 50px 10px;
 }
+ 
+.carousel-item h4{
+  margin-bottom: 10px;
+}
 
-.dicas {
- display: none;
-
+.carousel-item p {
+  text-align: justify;
 }
 
 /* Config da section contact*/
@@ -432,6 +448,11 @@ section p {
   font-size: 14px;
 }
 
+.contact_son li span{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 .endereco {
   display: flex;
 }
@@ -446,6 +467,8 @@ h4.endereco a {
 }
 
 h4.endereco span {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold;
   margin-left: 5px;
 
 }
@@ -463,6 +486,8 @@ h4.endereco span {
   width: 100%;
   height: 200px;
 }
+
+
 
 /*config do Rodapé*/
 
@@ -493,6 +518,11 @@ footer a {
   display: flex;
 }
 
+.footer_text p span{
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold;
+}
+
 .footer_icon {
   display: flex;
   gap: 10px;
@@ -512,8 +542,8 @@ footer a {
     width: 66%;
     flex-direction: row;
     gap: 50px;
-}
   }
+}
 
 
 @media screen and (min-width: 926px) {
@@ -577,17 +607,17 @@ footer a {
   .father_about{
     width: 70%;
     gap: 50px;
+    margin-top: 15px;
 
-  }
-
-  .intro_about{
-    width: 95%;
   }
 
   .text_about{
     width: 100%;
   }
 
+  .img_about{
+    width: 95%;
+  }
 
   /* config team*/
 
