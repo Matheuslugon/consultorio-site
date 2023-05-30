@@ -193,10 +193,14 @@ section .banner {
   background-color: var(--cor006);
 }
 
-.open_query>p {
+.open_query > p {
   text-align: center;
 }
 
+.open_query p span {
+  font-family: 'Montserrat', sans-serif;  
+  font-weight: bold;
+}
 
 .img_home img {
   display: flex;
@@ -213,6 +217,8 @@ section .banner {
 
 .text_about h3{
   text-align: center;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold;
   padding: 15px 30px 0px 30px;
 }
 
@@ -252,12 +258,13 @@ section .banner {
 }
 
 .intro_son ul a {
+  width: 215px;
   list-style: none;
   text-decoration: none;
   display: flex;
   color: black;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 30px;
   padding: 20px 20px 20px 20px;
   margin-top: 30px;
   gap: 10px;
@@ -268,6 +275,7 @@ section .banner {
 
 .intro_son img {
   width: 150px;
+  border-radius: 15px;
 }
 
 /*Config modal*/
