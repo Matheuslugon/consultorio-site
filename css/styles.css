@@ -96,10 +96,10 @@ section {
 }
 
 .travessao {
-  width: 60px;
+  width: 130px;
   height: 1px;
   margin: 10px auto 0;
-  border-bottom: 2px solid #285b6e;
+  border-bottom: 2px solid #9f6b55;
   margin-top: -50px;
 
 }
@@ -227,10 +227,6 @@ section .banner {
   padding: 0px 25px 0px 25px;
 }
 
-.button_img{
-  margin-top: 10%;
-}
-
 /* Config da section team*/
 
 .text_team h1 {
@@ -280,7 +276,52 @@ section .banner {
 
 /*Config modal*/
 
-.modal {
+#master-content-modal{
+  margin-bottom: 15px;
+}
+
+.modal-content{
+  background-color: var(--cor003);
+}
+
+.img_modal img{
+ width: 290px;
+ height: 290px;
+ box-shadow: 3px 3px 2px 1px #865b6c;
+border-radius: 5px;
+}
+
+.list_dra ul{
+  margin-top: 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+.list_dra ul li{
+  list-style: none;
+  text-align: justify;
+
+}
+
+.nome_dra h3{ 
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.nome_dra a i{
+  font-size: 19px;
+  color: white;
+  background: linear-gradient(140deg, #A722EE, #FF227B ,#FA602C );
+  padding: 2px 4px 2px 4px;
+  border-radius: 6px;
+}
+
+.list_dra {
+  display: flex;
+  margin-left: 50px;
+}
+
+
+/* .modal {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -316,6 +357,7 @@ section .banner {
   margin-left: 10%;
   font-size: 13px;
 }
+*/
 
 .content_text {
   display: flex;
@@ -330,6 +372,7 @@ section .banner {
 
 .list_dra {
   display: flex;
+  margin-left: 0px;
 }
 
 .list_dra li {
@@ -387,30 +430,72 @@ section .banner {
   border-radius: 6px;
 }
 
-.carousel_master{
-  width: 100%;
+
+
+/* Config Collapse*/
+
+#collapse_intro{
+  margin-top: 50px;
 }
 
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.button_collapse_master{
+  width: 95%;
+  gap: 4px;
+}
+
+.button_collapse{
+  background-color: white;
+  border-color: white;
+  justify-content: space-between;
+  box-shadow: 4px 4px 8px 0px gray;
+  gap: 15px;
   text-align: center;
-  margin-top: 50px;
+  width: 100%;
+  height: 76px;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
 }
 
-#myCarousel {
-  margin-top: 50px;
-  text-align: -webkit-center;
-  background-color: #e9a9bca8;
-  padding: 0px 10px 50px 10px;
-}
- 
-.carousel-item h4{
-  margin-bottom: 10px;
+.button_collapse > h5 span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
 }
 
-.carousel-item p {
+.button_collapse > span{
+  width: 20px;
+  height: 20px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.button_collapse[aria-expanded="true"] > span{
+  transform: rotate(180deg);
+}
+
+.title_son{
+  text-align: center;
+}
+
+.title_son h5{
+  text-align: left;
+  font-size: 15px;
+}
+
+.button_collapse span i{
+  color: var(--cor001);
+}
+
+.card-color{
+  background-color: #2982695c;
+}
+
+.attention-dicas{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 25px 0px 25px;
   text-align: justify;
 }
 
@@ -551,6 +636,16 @@ footer a {
     flex-direction: row;
     gap: 50px;
   }
+
+  .button_collapse{
+    height: 50px;
+    padding: 15px 10px 10px 10px;
+  }
+
+  .list_dra{
+    margin-left: 50px;
+    margin-top: 25px;
+  }
 }
 
 
@@ -568,6 +663,9 @@ footer a {
     width: 100%
   }
 
+  .button_collapse_master {
+    width: 60%;
+  }
 }
 
 
@@ -615,7 +713,7 @@ footer a {
   .father_about{
     width: 70%;
     gap: 50px;
-    margin-top: 15px;
+    margin-top: 30px;
 
   }
 
@@ -647,7 +745,13 @@ footer a {
 
   /* Config modal */
 
-  .modal_content_father {
+    
+  .list_dra ul{
+    padding: 0px 35px 0px 0px;
+  }
+
+
+/*  .modal_content_father {
     display: flex;
     flex-direction: row;
   }
@@ -665,30 +769,6 @@ footer a {
 
   .content_img img {
     width: 350px;
-  }
-
-  #myCarousel {
-    text-align: -webkit-center;
-
-  }
-
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-  }
-
-  #dicas{
-    width: 55%;
-  }
-
-  .dicas {
-    text-align: center;
-    width: 100%;
-    margin-top: 15px;
-    background-color: #e9a9bca8;
-    padding-top: 10px;
   }
 
   /* config contact */
