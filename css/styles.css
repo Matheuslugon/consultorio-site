@@ -184,10 +184,6 @@ section .banner {
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 }
-.consulta {
-  display: flex;
-  justify-content: center;
-}
 
 .open_query {
   background-color: var(--cor006);
@@ -247,6 +243,10 @@ section .banner {
   gap: 5px !;
 }
 
+.intro_son{
+
+}
+
 .intro_son ul {
   padding: 0px;
   width: 100%;
@@ -291,6 +291,9 @@ section .banner {
 border-radius: 5px;
 }
 
+#team{
+  margin-top: 5px;
+}
 .list_dra ul{
   margin-top: 20px;
   padding: 0px 0px 0px 0px;
@@ -308,6 +311,8 @@ border-radius: 5px;
 }
 
 .nome_dra a i{
+  margin-top: 5px;
+  margin-left: 5px;
   font-size: 19px;
   color: white;
   background: linear-gradient(140deg, #A722EE, #FF227B ,#FA602C );
@@ -391,17 +396,6 @@ border-radius: 5px;
 }
 
 /* close modal*/
-
-.modal_close {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 92%;
-}
-
-.modal_close a {
-  text-decoration: none;
-  color: black;
-}
 
 .modal_close i {
   font-size: 23px;
@@ -646,6 +640,10 @@ footer a {
     margin-left: 50px;
     margin-top: 25px;
   }
+
+  .modal-body{
+    flex-direction: row !important;
+  }
 }
 
 
@@ -695,8 +693,18 @@ footer a {
     margin-left: 15%;
   }
 
+  
+
   .consulta {
     margin-bottom: 20px;
+  }
+
+  .consulta a{
+    transition: 250ms linear; 
+  }
+
+  .consulta a:hover{
+    transform: scale(1.1);
   }
 
   .open_query>p {
@@ -721,6 +729,10 @@ footer a {
     width: 100%;
   }
 
+  .carousel-inner {
+    border-radius: 8px;
+}
+
   .img_about{
     width: 95%;
   }
@@ -731,8 +743,13 @@ footer a {
     gap: 3em;
   }
 
+  .intro_son ul a{
+    transition: 250ms linear; 
+
+  }
+
   .intro_son ul a:hover {
-  
+    transform: scale(1.1);
     color: var(--cor008);
     box-shadow: 4px 4px 8px 0px #a37b5991;
 
@@ -788,7 +805,7 @@ footer a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: -50px;
+    margin-top: -10px;
   }
 
 }
