@@ -161,13 +161,10 @@ section .banner {
   text-shadow: 2px 4px 6px black;
 }
 
-
-
 .consulta {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-
 }
 
 .consulta a {
@@ -180,6 +177,7 @@ section .banner {
   border-radius: 44px;
   box-shadow: 4px 4px 8px 0px #9f7856;
 }
+
 .consulta a span{
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
@@ -241,10 +239,6 @@ section .banner {
 
 .intro_father {
   gap: 5px !;
-}
-
-.intro_son{
-
 }
 
 .intro_son ul {
@@ -324,45 +318,6 @@ border-radius: 5px;
   display: flex;
   margin-left: 50px;
 }
-
-
-/* .modal {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(77, 77, 77, 0.7);
-  transition: all 0.1s;
-}
-
-.modal_intro {
-  width: 100%;
-}
-
-.modal:target {
-  position: fixed;
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal_content_father {
-  background-color: #e9a9bc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 3px 3px 2px 1px #865b6c;
-  border-radius: 5px;
-  width: 83%;
-  margin-left: 10%;
-  font-size: 13px;
-}
-*/
 
 .content_text {
   display: flex;
@@ -766,29 +721,6 @@ footer a {
   .list_dra ul{
     padding: 0px 35px 0px 0px;
   }
-
-
-/*  .modal_content_father {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .list_dra {
-    display: flex;
-    margin-left: 50px;
-  }
-
-
-  .content_img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .content_img img {
-    width: 350px;
-  }
-
-  /* config contact */
 
   .maps {
     display: flex;
