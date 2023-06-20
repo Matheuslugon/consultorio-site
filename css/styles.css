@@ -95,6 +95,11 @@ section {
   flex-direction: column;
 }
 
+#collapese_dicas{
+  min-height: 0vh;
+  padding-top: 0px;
+}
+
 .travessao {
   width: 130px;
   height: 1px;
@@ -383,13 +388,10 @@ border-radius: 5px;
 
 /* Config Collapse*/
 
-#collapse_intro{
-  margin-top: 50px;
-}
-
-.button_collapse_master{
-  width: 95%;
-  gap: 4px;
+#collapese_dicas {
+  margin-top: -100px;
+  min-height: 0vh;
+  padding-top: 0px;
 }
 
 .button_collapse{
@@ -403,6 +405,7 @@ border-radius: 5px;
   height: 76px;
   border-radius: 8px;
   padding: 10px 10px 10px 10px;
+  margin-top: 2px;
 }
 
 .button_collapse > h5 span{
@@ -740,4 +743,11 @@ footer a {
     margin-top: -10px;
   }
 
+}
+
+@media (max-width: 350px) {
+
+.box_contact{
+  width: 86% !important;
+}
 }
