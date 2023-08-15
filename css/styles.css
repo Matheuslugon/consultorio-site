@@ -219,7 +219,7 @@ section .banner {
   text-align: center;
   font-family: 'Montserrat', sans-serif; 
   font-weight: bold;
-  padding: 3px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
 }
 
 .text_about p{
@@ -239,7 +239,6 @@ section .banner {
 }
 
 .text_team h4 {
-  text-align: center;
   padding: 25px 25px 0px 25px;
 }
 
@@ -579,10 +578,23 @@ footer a {
 
 /* Config desktop*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px){
   .text_team{
-    width: 40%;
+    width: 1200px !important;
   }
+
+  .father_about {
+    width: 68% !important;
+  }
+
+  .wrapper-cards {
+    max-width: 75% !important;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
   .father_about{
     width: 66%;
     flex-direction: row;
@@ -602,14 +614,15 @@ footer a {
   .modal-body{
     flex-direction: row !important;
   }
+
 }
 
 
 @media screen and (min-width: 926px) {
   .wrapper-cards {
-    max-width: 75%;
+    max-width: 97%;
     width: 100%;
-  }
+}
 
   .intro_team{
     width: 40%;
